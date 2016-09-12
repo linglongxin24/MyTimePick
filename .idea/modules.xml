@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyTimePick.iml" filepath="$PROJECT_DIR$/MyTimePick.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mytimepicklibrary/mytimepicklibrary.iml" filepath="$PROJECT_DIR$/mytimepicklibrary/mytimepicklibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelPickerDemo/wheelPickerDemo.iml" filepath="$PROJECT_DIR$/wheelPickerDemo/wheelPickerDemo.iml" />
     </modules>
   </component>
 </project>

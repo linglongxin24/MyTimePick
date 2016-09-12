@@ -19,12 +19,14 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv_chose;
+    private TextView tv_chose2;
     private int count = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_chose = (TextView) findViewById(R.id.tv_chose);
+        tv_chose2 = (TextView) findViewById(R.id.tv_chose2);
 //        Rotate3d rotate = new Rotate3d();
 //        rotate.setDuration(3000);
 //        tv.measure(0, 0);
@@ -37,8 +39,41 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 showChoseTimeDialog();
             }
+        }); tv_chose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                showChoseFeeDialog();
+            }
         });
     }
+//
+//    private void showChoseFeeDialog() {
+//        final ArrayList<String> hours = get24hours();
+//
+//        MyTimePicker myTimePicker = new MyTimePicker(this, hours);
+//        myTimePicker.setSelectedItem(0, 0, 0);
+//        myTimePicker.setTitleText("选择时间");
+//        myTimePicker.setTitleTextSize(16);
+//        myTimePicker.setHideCounty(true);
+//        myTimePicker.setHideProvince(true);
+//        myTimePicker.setTopBackgroundColor(Color.parseColor("#FFEAEAEB"));
+//        myTimePicker.setTextSize(21);
+//
+//        myTimePicker.setCancelText("取消");
+//        myTimePicker.setSubmitText("完成");
+//        myTimePicker.setSubmitTextColor(Color.parseColor("#F77B55"));
+//        myTimePicker.setLineColor(Color.parseColor("#FFEAEAEB"));
+//        myTimePicker.setTextColor(Color.parseColor("#000000"));
+//        myTimePicker.show();
+//        myTimePicker.setOnAddressPickListener(new MyTimePicker.OnAddressPickListener() {
+//            @Override
+//            public void onAddressPicked(String province, String city, String county) {
+//                System.out.println("province=" + province);
+//                System.out.println("city=" + city);
+//                System.out.println("county=" + county);
+//            }
+//        });
+//    }
 
     private void showChoseTimeDialog() {
         final ArrayList<String> minutes = get64minutes();
